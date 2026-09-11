@@ -1,0 +1,17 @@
+.container{
+    border: solid; 
+    height: 100%;
+    font-size: 50px;
+    color: #2b50d6;
+
+    border-color: blue;
+    text-align: center; 
+}
+
+.titulo{
+    color: black;
+}
+
+p{
+    color: aqua;
+}

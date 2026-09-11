@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Desafio Acadêmico</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <div class="logo">
+        🎓 Desafio Acadêmico
+    </div>
+
+    <nav>
+        <button onclick="mostrarTela('inicio')">Início</button>
+        <button onclick="mostrarTela('ranking')">🏆 Ranking</button>
+        <button onclick="mostrarTela('campeonato')">🏅 Campeonato</button>
+    </nav>
+</header>
+
+<main>
+
+    <!-- INÍCIO -->
+
+    <section id="inicio" class="tela ativa">
+
+        <div class="hero">
+
+            <h1>Transforme seus estudos em uma competição.</h1>
+
+            <p>
+                Estude, responda desafios, conquiste XP
+                e dispute o campeonato da sua turma.
+            </p>
+
+            <button class="btn-principal" onclick="mostrarTela('cadastro')">
+                Começar agora 🚀
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- CADASTRO -->
+
+    <section id="cadastro" class="tela">
+
+        <div class="card">
+
+            <h2>👤 Criar perfil</h2>
+
+            <input
+                id="nome"
+                type="text"
+                placeholder="Seu nome"
+            >
+
+            <input
+                id="curso"
+                type="text"
+                placeholder="Curso"
+            >
+
+            <input
+                id="turma"
+                type="text"
+                placeholder="Turma / período"
+            >
+
+            <button
+                class="btn-principal"
+                onclick="cadastrarAluno()"
+            >
+                Entrar no campeonato
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- DASHBOARD -->
+
+    <section id="dashboard" class="tela">
+
+        <h1>Olá, <span id="nomeAluno"></span>! 👋</h1>
+
+        <div class="estatisticas">
+
+            <div class="stat">
+                <strong id="xp">0</strong>
+                <span>XP</span>
+            </div>
+
+            <div class="stat">
+                <strong id="pontos">0</strong>
+                <span>Pontos</span>
+            </div>
+
+            <div class="stat">
+                <strong id="acertos">0</strong>
+                <span>Acertos</span>
+            </div>
+
+            <div class="stat">
+                <strong id="sequencia">0</strong>
+                <span>Sequência 🔥</span>
+            </div>
+
+        </div>
+
+        <div class="card">
+
+            <h2>🧠 Desafio de Nutrição</h2>
+
+            <p>
+                Responda às questões e conquiste pontos
+                para subir no ranking.
+            </p>
+
+            <button
+                class="btn-principal"
+                onclick="iniciarQuiz()"
+            >
+                Iniciar desafio
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- QUIZ -->
+
+    <section id="quiz" class="tela">
+
+        <div class="quiz-card">
+
+            <div class="quiz-top">
+
+                <span id="questaoNumero">
+                    Questão 1/10
+                </span>
+
+                <span>
+                    ⏱️ <span id="tempo">30</span>s
+                </span>
+
+            </div>
+
+            <h2 id="pergunta"></h2>
+
+            <div id="alternativas"></div>
+
+            <div id="explicacao"></div>
+
+        </div>
+
+    </section>
+
+
+    <!-- RANKING -->
+
+    <section id="ranking" class="tela">
+
+        <h1>🏆 Ranking da Turma</h1>
+
+        <p>
+            Campeonato Acadêmico — Semestre Atual
+        </p>
+
+        <div id="listaRanking"></div>
+
+    </section>
+
+
+    <!-- CAMPEONATO -->
+
+    <section id="campeonato" class="tela">
+
+        <div class="card campeonato">
+
+            <h1>🏆 Campeonato Acadêmico</h1>
+
+            <h2>Final do semestre</h2>
+
+            <p>
+                Os melhores estudantes serão premiados
+                ao final do campeonato.
+            </p>
+
+            <div class="premios">
+
+                <div>
+                    🥇
+                    <h3>1º Lugar</h3>
+                    <p>Troféu + prêmio</p>
+                </div>
+
+                <div>
+                    🥈
+                    <h3>2º Lugar</h3>
+                    <p>Medalha + prêmio</p>
+                </div>
+
+                <div>
+                    🥉
+                    <h3>3º Lugar</h3>
+                    <p>Medalha + prêmio</p>
+                </div>
+
+            </div>
+
+            <hr>
+
+            <h2>🏅 Prêmios especiais</h2>
+
+            <p>🧠 Mestre do Conhecimento</p>
+            <p>🔥 Maior Sequência</p>
+            <p>📚 Aluno Mais Dedicado</p>
+            <p>🚀 Maior Evolução</p>
+
+        </div>
+
+    </section>
+
+</main>
+
+<script src="app.js"></script>
+
+</body>
+</html>
