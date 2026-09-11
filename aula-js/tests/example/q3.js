@@ -15,8 +15,6 @@ for (let i = 0; i < 10 ; i++){
     }
 }
 
-
 console.log("qtd Pares: "+qtdPar)
 console.log("soma Pares: "+somaPares)
-
 console.log("vetor digitado: "+numeros)
