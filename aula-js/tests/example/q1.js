@@ -36,34 +36,34 @@
 
 
 //CORREÇÃO
-// let temperaturas = []
-// let maior =  temperaturas = []
-// let menor = temperaturas = []
-// let soma = 0
-// let maior30 = 0
+let temperaturas = []
+let maior =  temperaturas = []
+let menor = temperaturas = []
+let soma = 0
+let maior30 = 0
 
-// for (let i = 0; i <= 6 ; i++){
-//     temperaturas[i] = Number(prompt("Digite"))
+for (let i = 0; i <= 6 ; i++){
+    temperaturas[i] = Number(prompt("Digite"))
 
-//     if(temperaturas[i]>maior){
-//         maior = temperaturas[i]
-//     }
+    if(temperaturas[i]>maior){
+        maior = temperaturas[i]
+    }
 
-//     if(temperaturas[i]<menor){
-//         menor = temperaturas[i]
-//     }
+    if(temperaturas[i]<menor){
+        menor = temperaturas[i]
+    }
 
-//     if(temperaturas[i]>30){
-//         maior30++;
-//         console.log("dia " + (i+1) + ", temperatura: " + temperaturas[i])
-//     }
+    if(temperaturas[i]>30){
+        maior30++;
+        console.log("dia " + (i+1) + ", temperatura: " + temperaturas[i])
+    }
 
-//     soma = soma + temperaturas[i]
-// }
+    soma = soma + temperaturas[i]
+}
 
-// let media = soma/temperaturas.length
+let media = soma/temperaturas.length
 
-// console.log("A maior temperatura registrada foi " + maior)
-// console.log("A menor temperatura registrada foi " + menor)
-// console.log("A média de temperaturas registradas foi " + media)
-// console.log("A quantidade de dias com temperaturas maiores que 30 foi " + maior30)
+console.log("A maior temperatura registrada foi " + maior)
+console.log("A menor temperatura registrada foi " + menor)
+console.log("A média de temperaturas registradas foi " + media)
+console.log("A quantidade de dias com temperaturas maiores que 30 foi " + maior30)
